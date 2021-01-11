@@ -14,14 +14,14 @@ const Contact = () => {
       </div>
       <div className={`${contactRight}`}>
         <h1 className={`title playFair`}>Kontakt</h1>
-        <p className={`paragraph roboto`}><strong>Adresa:</strong> Kuzminečka ulica 10, Vrbani III</p>
-        <p className={`paragraph roboto`}><strong>Kontakt broj:</strong> <a className={`${aTag}`} href="tel:012029659">01/202 9659</a></p>
-        <p className={`paragraph roboto`}><strong>Radno vrijeme:</strong> <br/> Ponedjeljak - Nedjelja <br/> 07 - 00h </p>
-        <p className={`paragraph roboto`}><strong>Naziv tvrtke:</strong> Mama Vrbani d.o.o.</p>
-        <p className={`paragraph roboto`}><strong>Adresa tvrtke:</strong> Aleja Matije Ljubeka 25, 10 000 Zagreb</p>
-        <p className={`paragraph roboto`}><strong>OIB:</strong> 40496930269</p>
-        <p className={`paragraph roboto`}><strong>Broj računa (IBAN):</strong> HR6023600001102836328, Zagrebačka banka</p>
-        <p className={`paragraph roboto`}>Upite za grupe, poslovne ili obiteljske proslave slati na na <strong><a className={`${aTag}`} href="mailto:info@cometomama.hr">info@cometomama.hr</a></strong> ili putem kontakt forme. <br/> Za marketing upite pišite na <strong><a className={`${aTag}`} href="mailto:marketing@cometomama.hr">marketing@cometomama.hr</a></strong> </p>
+        <p className={`paragraph roboto`}><strong>Adresa:</strong> 432 Wyandotte Ave, Lakewood, OH, 44107</p>
+        <p className={`paragraph roboto`}><strong>Kontakt broj:</strong> <a className={`${aTag}`} href="">01/677 5233</a></p>
+        <p className={`paragraph roboto`}><strong>Radno vrijeme:</strong> <br/> Ponedjeljak - Nedjelja <br/> 11 - 23h </p>
+        <p className={`paragraph roboto`}><strong>Naziv tvrtke:</strong> Tvrtka d.o.o.</p>
+        <p className={`paragraph roboto`}><strong>Adresa tvrtke:</strong> 432 Wyandotte Ave, Lakewood, OH, 44107</p>
+        <p className={`paragraph roboto`}><strong>OIB:</strong> 12345678910</p>
+        <p className={`paragraph roboto`}><strong>Broj računa (IBAN):</strong> HR123456789123458, Zagrebačka banka</p>
+        <p className={`paragraph roboto`}>Upite za grupe, poslovne ili obiteljske proslave slati na na <strong><a className={`${aTag}`} href="">info@rooftoprestaurant.co.uk</a></strong> ili putem kontakt forme. <br/> Za marketing upite pišite na <strong><a className={`${aTag}`} href="">support@rooftoprestaurant.com</a></strong> </p>
       </div>
     </div>
   )

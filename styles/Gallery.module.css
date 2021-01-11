@@ -52,16 +52,16 @@
 }
 
 .firstPic {
-  background-image: url('/gallery/1.jpg');
+  background-image: url('/gallery/1.png');
 }
 .secondPic {
-  background-image: url('/gallery/2.jpg');
+  background-image: url('/gallery/2.png');
 }
 .thirdPic {
-  background-image: url('/gallery/4.jpg');
+  background-image: url('/gallery/4.png');
 }
 .fourthPic {
-  background-image: url('/gallery/3.jpg');
+  background-image: url('/gallery/3.png');
   background-position: left;
 }
 

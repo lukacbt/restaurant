@@ -6,48 +6,48 @@ const Menu = () => {
   const { menuHolder, dishTitle, menuLeft, menuP, menuButton, menuLeftHolder, menuRight, menuRightHolder } = styles
   const dishes = [
     {
-      title: 'Pizze',
+      title: 'Predjela',
       eachDish: [
         {
-          dish: 'Mama Pikante',
-          price: '62 HRK',
-          description: 'Umak od rajčice, maslinovo ulje, mozzarella, šunka, češnjak, panceta, luk, ljuta papričica, svježi bosiljak'
+          dish: 'Ham & Potato Sandwiches',
+          price: '50 HRK',
+          description: 'French bread baguette, cooked ham, potato salad'
         },
         {
-          dish: 'Mama Prosciutto',
-          price: '64 HRK',
-          description: 'Umak od rajčice, dvije vrste mozzarelle, grana padano, maslinovo ulje, pršut, cherry rajčice, rukola, svježi bosiljak'
-        }
+          dish: 'Ham & Potato Sandwiches',
+          price: '50 HRK',
+          description: 'French bread baguette, cooked ham, potato salad'
+        },
       ]
     },
     {
-      title: 'Salate',
+      title: 'Glavna jela',
       eachDish: [
         {
-          dish: 'Burata',
-          price: '55 HRK',
-          description: 'Burata, rukola, cherry rajčice, svježi bosiljak, grisini'
+          dish: 'Ham & Potato Sandwiches',
+          price: '50 HRK',
+          description: 'French bread baguette, cooked ham, potato salad'
         },
         {
-          dish: 'Caprese',
-          price: '45 HRK',
-          description: 'Rajčice, mozzarella, maslinovo ulje, grisini'
-        }
+          dish: 'Ham & Potato Sandwiches',
+          price: '50 HRK',
+          description: 'French bread baguette, cooked ham, potato salad'
+        },
       ]
     },
     {
-      title: 'Le Kolač',
+      title: 'Deserti',
       eachDish: [
         {
-          dish: 'Pita od Jabuka',
-          price: '28 HRK',
-          description: ''
+          dish: 'Ham & Potato Sandwiches',
+          price: '50 HRK',
+          description: 'French bread baguette, cooked ham, potato salad'
         },
         {
-          dish: 'Yuzu Cheesecake',
-          price: '28 HRK',
-          description: ''
-        }
+          dish: 'Ham & Potato Sandwiches',
+          price: '50 HRK',
+          description: 'French bread baguette, cooked ham, potato salad'
+        },
       ]
     }
   ]
@@ -56,9 +56,9 @@ const Menu = () => {
     <div id="Menu" className={`${menuHolder} inner-width`}>
       <div className={`${menuLeft}`}>
         <div className={`${menuLeftHolder}`}>
-          <h1 className={`title playFair`}>Come to Mama - Mama Knows Best</h1>
-          <p className={`${menuP} paragraph roboto`}>Come to Mama novootvoreno mjesto za vrhunsku pizzu na zagrebačkim Vrbanima koje već na prvi pogled osvaja divnim cosy interijerom koji će baš svako druženje dodatno upotpuniti i navesti goste da se iznova vraćaju. <br/>  Ovo divno mjesto u svojoj ponudi nudi izbor između deset pizza koje će, sigurni smo, zadovoljiti baš svačiji ukus. </p>
-          <a className={`${menuButton} roboto`} target="_blank" href="/comeToMamaPDF.pdf">Cijeli menu</a>
+          <h1 className={`title playFair`}>DAILY FOOD COURSES WITH DRINKS</h1>
+          <p className={`${menuP} paragraph roboto`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <a className={`${menuButton} roboto`} target="_blank" href="">Cijeli menu</a>
         </div>
       </div>
       <div className={`${menuRight}`}>

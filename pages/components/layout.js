@@ -14,7 +14,7 @@ const layout = props => {
     <span>
       <Navbar />
       <div className={contentHolder}>
-        <a href="/comeToMamaPDF.pdf" target="_blank">
+        <a href="/" target="_blank">
           <div className={`${fixedLeft} ${fixed}`}>
             <p className={`${paragraphLeft} roboto`}>Cijeli Menu</p>
           </div>

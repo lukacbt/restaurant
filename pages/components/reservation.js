@@ -72,7 +72,7 @@ const Reservation = () => {
       </div>
       <div className={`${reservationRight}`}>
         <h1 className={`${resTitle} title playFair`}>Rezerviraj stol</h1>
-        <p className={`paragraph roboto`}>Ljubitelji pizze Romana, jednostavne, a tako bogate okusom, s najboljim mogućim sastojcima, te tankom, hrskavom koricom došli su na svoje. <br/> Come to Mama sažima ideju ugođaja doma, šarenih detalja i razigranosti koji su uz ukusnu i slasnu pizzu nepogriješiva kombinacija.</p>
+        <p className={`paragraph roboto`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
     </div>
   )

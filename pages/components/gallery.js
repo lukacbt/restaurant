@@ -23,10 +23,10 @@ const Gallery = () => {
 
   const handleNext = operation => {
     let number = activePic.activeImage
-    if (number == "6" && operation === 1) {
+    if (number == "4" && operation === 1) {
       number = 1
     } else if (number == "1" && operation === -1) {
-      number = 6
+      number = 4
     } else {
       number = parseInt(number) + operation
     }
@@ -62,7 +62,7 @@ const Gallery = () => {
             <span className={`${arrows}`} onClick={() => handleNext(-1)}>
               <LeftArrowIcon />
             </span>
-            <img className="activeImg" onClick={() => handleNext(1)} src={`/gallery/${activePic.activeImage}.jpg`} />
+            <img className="activeImg" onClick={() => handleNext(1)} src={`/gallery/${activePic.activeImage}.png`} />
             <span className={`${arrows}`} onClick={() => handleNext(1)}>
               <RightArrowIcon />
             </span>

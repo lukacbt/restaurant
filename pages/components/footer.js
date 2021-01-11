@@ -19,31 +19,31 @@ const Footer = () => {
       <div className="inner-width">
         <div className={`${footerHolder}`}>
           <div className={`${eachFooterDiv}`}>
-            <h3 className={`${footerTitle} playFair`}>Pizzeria Come To Mama</h3>
+            <h3 className={`${footerTitle} playFair`}>Restaurant Rooftop</h3>
             <p className={`${footerText} ${footerTextP} roboto`}>S uvijek svježim namirnicama i pažljivom pripremom jela, našim gostima želimo priuštiti jedinstveno gastronomsko iskustvo.</p>
           </div>
           <div className={`${eachFooterDiv}`}>
             <h3 className={`${footerTitle} playFair`}>Kontakt</h3>
-            <span className={`${footerText} roboto`}><Location /> Kuzminečka ulica 10, Vrbani III</span>
+            <span className={`${footerText} roboto`}><Location /> 432 Wyandotte Ave, Lakewood, OH, 44107</span>
             <span className={`${footerText} roboto`}><Phone /> Rezervacije:</span>
-            <span className={`${footerText} roboto`}><a className={`${aa}`} href="tel:012029659">01/202 9659</a> </span>
-            <span className={`${footerText} roboto`}><Mail/> <a className={`${bb}`} href="mailto:info@cometomama.hr">info@cometomama.hr</a></span>
+            <span className={`${footerText} roboto`}><a className={`${aa}`} href="tel:">01/677 5233</a> </span>
+            <span className={`${footerText} roboto`}><Mail/> <a className={`${bb}`} href="mailto:">info@rooftoprestaurant.co.uk</a></span>
           </div>
           <div className={`${eachFooterDiv}`}>
             <h3 className={`${footerTitle} playFair`}>Pronađite nas</h3>
             <div className={`${svgsHolder}`}>
-              <a target="_blank" href="https://www.instagram.com/come.to.mama_/?hl=hr" className={`${eachSvgHolder}`}>
+              <a target="_blank" href="" className={`${eachSvgHolder}`}>
                 <Facebook />
               </a>
-              <a target="_blank" href="https://www.facebook.com/cometomamacroatia/" className={`${eachSvgHolder}`}>
+              <a target="_blank" href="" className={`${eachSvgHolder}`}>
                 <Instagram />
               </a>
             </div>
             <div className={`${dostavaHolder}`}>
-              <a target="_blank" href="https://www.pauza.hr/dostava/zagreb/come-to-mama" className={`${anchor}`}>
+              <a target="_blank" href="" className={`${anchor}`}>
                 <img src="/footer/pauza.png" />
               </a>
-              <a target="_blank" href="https://wolt.com/hr/hrv/zagreb/restaurant/come-to-mama" className={`${anchor}`}>
+              <a target="_blank" href="" className={`${anchor}`}>
                 <img src="/footer/wolt.png" />
               </a>
               <a target="_blank" href="" className={`${anchor}`}>
