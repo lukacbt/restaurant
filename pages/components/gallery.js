@@ -23,10 +23,10 @@ const Gallery = () => {
 
   const handleNext = operation => {
     let number = activePic.activeImage
-    if (number == "4" && operation === 1) {
+    if (number == "8" && operation === 1) {
       number = 1
     } else if (number == "1" && operation === -1) {
-      number = 4
+      number = 8
     } else {
       number = parseInt(number) + operation
     }
@@ -62,7 +62,7 @@ const Gallery = () => {
             <span className={`${arrows}`} onClick={() => handleNext(-1)}>
               <LeftArrowIcon />
             </span>
-            <img className="activeImg" onClick={() => handleNext(1)} src={`/gallery/${activePic.activeImage}.png`} />
+            <img className="activeImg" onClick={() => handleNext(1)} src={`/gallery/slika${activePic.activeImage}.png`} />
             <span className={`${arrows}`} onClick={() => handleNext(1)}>
               <RightArrowIcon />
             </span>
@@ -71,33 +71,33 @@ const Gallery = () => {
       }
       <div className={`${galleryLeft}`}>
         <div className={`${firstPicHolder} ${picHolder}`}>
-          <span id="1" onClick={handleClick} className={`${picCross}`}>
-            <PlusIcon id="1" />
+          <span id="3" onClick={handleClick} className={`${picCross}`}>
+            <PlusIcon id="3" />
           </span>
-          <div id="1" onClick={handleClick} className={`${overlay}`}></div>
+          <div id="3" onClick={handleClick} className={`${overlay}`}></div>
           <div className={`${firstPic} ${eachPic}`}></div>
         </div>
         <div className={`${thirdPicHolder} ${picHolder}`}>
-          <span id="4" onClick={handleClick} className={`${picCross}`}>
-            <PlusIcon id="4" />
+          <span id="7" onClick={handleClick} className={`${picCross}`}>
+            <PlusIcon id="7" />
           </span>
-          <div id="4" onClick={handleClick} className={`${overlay}`}></div>
+          <div id="7" onClick={handleClick} className={`${overlay}`}></div>
           <div className={`${thirdPic} ${eachPic}`}></div>
         </div>
       </div>
       <div className={`${galleryRight}`}>
         <div className={`${secondPicHolder} ${picHolder}`}>
-          <span id="2" onClick={handleClick} className={`${picCross}`}>
-            <PlusIcon id="2" />
+          <span id="1" onClick={handleClick} className={`${picCross}`}>
+            <PlusIcon id="1" />
           </span>
-          <div id="2" onClick={handleClick} className={`${overlay}`}></div>
+          <div id="1" onClick={handleClick} className={`${overlay}`}></div>
           <div className={`${secondPic} ${eachPic}`}></div>
         </div>
         <div className={`${fourthPicHolder} ${picHolder}`}>
-          <span id="3" onClick={handleClick} className={`${picCross}`}>
-            <PlusIcon id="3" />
+          <span id="4" onClick={handleClick} className={`${picCross}`}>
+            <PlusIcon id="4" />
           </span>
-          <div id="3" onClick={handleClick} className={`${overlay}`}></div>
+          <div id="4" onClick={handleClick} className={`${overlay}`}></div>
           <div className={`${fourthPic} ${eachPic}`}></div>
         </div>
       </div>

@@ -19,15 +19,15 @@ const Footer = () => {
       <div className="inner-width">
         <div className={`${footerHolder}`}>
           <div className={`${eachFooterDiv}`}>
-            <h3 className={`${footerTitle} playFair`}>Restaurant Rooftop</h3>
+            <h3 className={`${footerTitle} playFair`}>Restoran Bonaca</h3>
             <p className={`${footerText} ${footerTextP} roboto`}>S uvijek svježim namirnicama i pažljivom pripremom jela, našim gostima želimo priuštiti jedinstveno gastronomsko iskustvo.</p>
           </div>
           <div className={`${eachFooterDiv}`}>
             <h3 className={`${footerTitle} playFair`}>Kontakt</h3>
-            <span className={`${footerText} roboto`}><Location /> 432 Wyandotte Ave, Lakewood, OH, 44107</span>
+            <span className={`${footerText} roboto`}><Location /> Trakošćanska 41, 10110 Zagreb</span>
             <span className={`${footerText} roboto`}><Phone /> Rezervacije:</span>
             <span className={`${footerText} roboto`}><a className={`${aa}`} href="tel:">01/677 5233</a> </span>
-            <span className={`${footerText} roboto`}><Mail/> <a className={`${bb}`} href="mailto:">info@rooftoprestaurant.co.uk</a></span>
+            <span className={`${footerText} roboto`}><Mail/> <a className={`${bb}`} href="mailto:restoranbonacazg@gmail.com ">restoranbonacazg@gmail.com </a></span>
           </div>
           <div className={`${eachFooterDiv}`}>
             <h3 className={`${footerTitle} playFair`}>Pronađite nas</h3>

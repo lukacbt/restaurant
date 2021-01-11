@@ -123,7 +123,7 @@ span.footerText > svg path {
 
 @media screen and (max-width: 1024px) {
   .eachFooterDiv {
-    max-width: 225px;
+    max-width: 235px;
   }
 }
 

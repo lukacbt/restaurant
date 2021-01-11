@@ -7,8 +7,8 @@ const Hero = () => {
   return (
     <div id="Početna" className={heroHolder}>
       <div className={titleHolder}>
-        <h2 className={`${pizzeriaName} playFair`}>Rooftop</h2>
-        <h3 className={`${pizzeriaDesc} roboto`}>A fine dinning restaurant</h3>
+        <h2 className={`${pizzeriaName} playFair`}>Restoran Bonaca</h2>
+        <h3 className={`${pizzeriaDesc} roboto`}>Izvrsna mediteranska kuhinja</h3>
       </div>
       <div className={top}></div>
     </div>

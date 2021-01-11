@@ -23,7 +23,7 @@
 }
 
 .firstPicHolder {
-  height: 780px;
+  height: 580px;
   width: 100%;
   margin-bottom: 30px;
 }
@@ -37,7 +37,7 @@
   width: 85%;
 }
 .fourthPicHolder {
-  height: 583px;
+  height: 580px;
   width: 100%;
 }
 
@@ -52,17 +52,16 @@
 }
 
 .firstPic {
-  background-image: url('/gallery/1.png');
+  background-image: url('/gallery/slika3.png');
 }
 .secondPic {
-  background-image: url('/gallery/2.png');
+  background-image: url('/gallery/slika1.png');
 }
 .thirdPic {
-  background-image: url('/gallery/4.png');
+  background-image: url('/gallery/slika7.png');
 }
 .fourthPic {
-  background-image: url('/gallery/3.png');
-  background-position: left;
+  background-image: url('/gallery/slika4.png');
 }
 
 .overlay:hover ~ div {

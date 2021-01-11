@@ -6,32 +6,32 @@ const Menu = () => {
   const { menuHolder, dishTitle, menuLeft, menuP, menuButton, menuLeftHolder, menuRight, menuRightHolder } = styles
   const dishes = [
     {
-      title: 'Predjela',
+      title: 'Pasta & rižoto',
       eachDish: [
         {
-          dish: 'Ham & Potato Sandwiches',
-          price: '50 HRK',
-          description: 'French bread baguette, cooked ham, potato salad'
+          dish: 'Bijeli rižoto s kozicama',
+          price: '80 HRK',
+          description: 'Riža, jadranske kozice, vrhnje, riblji temeljac'
         },
         {
-          dish: 'Ham & Potato Sandwiches',
-          price: '50 HRK',
-          description: 'French bread baguette, cooked ham, potato salad'
+          dish: 'Bijeli pljukanci s kozicama',
+          price: '90 HRK',
+          description: 'Domaća tjestenina, jadranske kozice, vrhnje, riblji temeljac'
         },
       ]
     },
     {
-      title: 'Glavna jela',
+      title: 'Riblja jela',
       eachDish: [
         {
-          dish: 'Ham & Potato Sandwiches',
-          price: '50 HRK',
-          description: 'French bread baguette, cooked ham, potato salad'
+          dish: 'Popara od hobotnice',
+          price: '80 HRK',
+          description: 'Riblji temeljac, komadići jadranske hobotnice, domaća šalša od rajčice, prilog po izboru'
         },
         {
-          dish: 'Ham & Potato Sandwiches',
-          price: '50 HRK',
-          description: 'French bread baguette, cooked ham, potato salad'
+          dish: 'Bijela riba na žaru',
+          price: '100 HRK',
+          description: 'Orada ili brancin na žaru s blitvom i krumpirom'
         },
       ]
     },
@@ -39,14 +39,12 @@ const Menu = () => {
       title: 'Deserti',
       eachDish: [
         {
-          dish: 'Ham & Potato Sandwiches',
-          price: '50 HRK',
-          description: 'French bread baguette, cooked ham, potato salad'
+          dish: 'Monte torta',
+          price: '25 HRK',
         },
         {
-          dish: 'Ham & Potato Sandwiches',
-          price: '50 HRK',
-          description: 'French bread baguette, cooked ham, potato salad'
+          dish: 'Štrudla od jabuke',
+          price: '20 HRK',
         },
       ]
     }
@@ -56,9 +54,9 @@ const Menu = () => {
     <div id="Menu" className={`${menuHolder} inner-width`}>
       <div className={`${menuLeft}`}>
         <div className={`${menuLeftHolder}`}>
-          <h1 className={`title playFair`}>DAILY FOOD COURSES WITH DRINKS</h1>
+          <h1 className={`title playFair`}>Mediteranska jela u srcu Zagreba</h1>
           <p className={`${menuP} paragraph roboto`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <a className={`${menuButton} roboto`} target="_blank" href="">Cijeli menu</a>
+          <a className={`${menuButton} roboto`} target="_blank" href="/jelovnik.pdf">Cijeli menu</a>
         </div>
       </div>
       <div className={`${menuRight}`}>
