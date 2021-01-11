@@ -1,0 +1,118 @@
+.navbarHolder {
+  height: 100px;
+  width: 100%;
+  position: sticky;
+  transform: translate3d(0,0,0);
+  top: 0;
+  z-index: 9;
+  background-color: white;
+  transition: box-shadow ease-in-out 0.4s;
+}
+
+.navbarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+.navbarShadow {
+  box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+}
+
+.eachNavHolder {
+  width: calc(50% - 60px);
+  display: flex;
+  justify-content: center;
+}
+
+.navImg {
+  cursor: pointer;
+  width: auto;
+  height: 90px;
+}
+
+.eachNav {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color ease-in-out 0.3s;
+}
+
+.eachNav:hover {
+  color: #ad9966;
+}
+
+.eachNav.active {
+  color: #ad9966;
+}
+
+.eachNav:not(:last-child) {
+  margin-right: 32px;
+}
+.navbarMobileHolder {
+display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbarHolder {
+    height: 75px;
+  }
+  .eachNav:not(:last-child) {
+    margin-right: 15px;
+  }
+  .navImg {
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbarHolder {
+    display: none;
+  }
+
+  .navbarMobileHolder {
+    position: sticky;
+    top: 0;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    z-index: 9;
+    background-color: white;
+    outline: none;
+    box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+  }
+  .navImg {
+    height: 65px;
+  }
+  .navbarMobileHolder span.burgerHolder {
+    cursor: pointer;
+  }
+  .navbarMobileDropdown {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    height: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+    overflow: hidden;
+  }
+  .navbarMobileDropdown.active {
+    height: 262px;
+  }
+  .eachNav.nn {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    font-size: 14px;
+  }
+}

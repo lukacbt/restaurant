@@ -1,0 +1,69 @@
+.contentHolder {
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+.fixed {
+  position: fixed;
+  width: 92px;
+  height: 180px;
+  top: 40%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.fixedLeft:hover .paragraphLeft {
+  color: #ad9966;
+  transform: rotate(0deg);
+  transform: translate(-48px, 82.5px);
+  letter-spacing: 0.4px;
+}
+
+.fixedRight:hover .paragraphRight {
+  color: black;
+  transform: rotate(0deg);
+  transform: translate(-42px, 82.5px);
+  letter-spacing: 0.4px;
+}
+
+.fixedLeft {
+  background-image: url('/layout/left.png');
+  left: 0;
+}
+
+.fixedRight {
+  background-image: url('/layout/right.png');
+  right: 0;
+}
+
+.paragraphLeft {
+  letter-spacing: 2px;
+  transform: rotate(90deg) translate(90px, 64px);
+  margin: 0;
+  width: 180px;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+}
+
+.paragraphRight {
+  letter-spacing: 2px;
+  transform: rotate(-90deg) translate(-80px, -26px);
+  margin: 0;
+  width: 180px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+
+@media screen and (max-width: 1349px) {
+  .fixed {
+    display: none;
+  }
+}

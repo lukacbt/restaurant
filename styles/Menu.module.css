@@ -1,0 +1,90 @@
+.menuHolder {
+  display: flex;
+}
+
+.menuLeft {
+  width: 43%;
+  display: flex;
+  align-items: center;
+}
+
+.menuLeftHolder {
+  padding: 0 30px 110px 15px;
+}
+
+.menuP {
+  margin-bottom: 50px;
+}
+
+.menuButton {
+  line-height: 48px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  background-color: #ad9966;
+  border: 1px solid #ad9966;
+  color: white;
+  cursor: pointer;
+  width: 198px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.3s;
+}
+
+.menuButton:hover {
+  background-color: white;
+  color: #ad9966;
+}
+
+.menuRight {
+  padding: 0 15px;
+  width: 57%;
+  height: 100%;
+}
+
+.menuRightHolder {
+  background-color: #faf5f0;
+  height: 100%;
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dishTitle {
+  position: relative;
+  font-size: 24px;
+  margin: 0 0 50px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: black;
+  font-weight: 400;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .menuRightHolder {
+    padding: 80px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menuHolder {
+    display: block;
+    padding-top: 55px;
+  }
+  .menuP {
+    margin-bottom: 30px;
+  }
+  .menuLeft {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .menuRight {
+    width: 100%;
+  }
+  .menuRightHolder {
+    padding: 60px 0;
+  }
+}

@@ -1,0 +1,80 @@
+.eachDish {
+  text-align: center;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.eachDish:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.dishTitle {
+  position: relative;
+  font-size: 21px;
+  margin: 0 0 70px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: black;
+  font-weight: 400;
+}
+
+.dishTitle::after {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: calc(50% - 60px);
+  height: 1px;
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dishContainer:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.dishHolder {
+  display: flex;
+  max-width: 280px;
+  margin: 0 auto 10px;
+  overflow: hidden;
+}
+
+.dishHolder::before {
+  color: black;
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: "................................................................................................."
+}
+
+.dishName {
+  font-weight: 500;
+  color: #010000;
+  font-size: 15px;
+  line-height: 1.7;
+  background-color: #faf5f0;
+  padding: 0 5px;
+}
+
+.dotted {
+  flex-grow: 1;
+}
+
+.dishDesc {
+  color: #777777;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .dishTitle {
+    margin: 0 0 40px;
+  }
+  .eachDish:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  .dishContainer:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}

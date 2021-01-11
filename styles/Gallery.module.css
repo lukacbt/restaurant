@@ -1,0 +1,228 @@
+.galleryHolder {
+  display: flex;
+  padding: 225px 0 0;
+}
+
+.galleryLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+  padding: 15px;
+  margin-top: -360px;
+}
+
+.galleryRight {
+  width: 50%;
+  padding: 15px;
+}
+
+.firstPicHolder, .secondPicHolder, .thirdPicHolder, .fourthPicHolder {
+  position: relative;
+  overflow: hidden;
+}
+
+.firstPicHolder {
+  height: 780px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.secondPicHolder {
+  height: 545px;
+  width: 85%;
+  margin-bottom: 30px;
+}
+.thirdPicHolder {
+  height: 545px;
+  width: 85%;
+}
+.fourthPicHolder {
+  height: 583px;
+  width: 100%;
+}
+
+.eachPic {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform ease-in-out 0.4s;
+}
+
+.firstPic {
+  background-image: url('/gallery/1.jpg');
+}
+.secondPic {
+  background-image: url('/gallery/2.jpg');
+}
+.thirdPic {
+  background-image: url('/gallery/4.jpg');
+}
+.fourthPic {
+  background-image: url('/gallery/3.jpg');
+  background-position: left;
+}
+
+.overlay:hover ~ div {
+  transform: scale(1.1);
+}
+
+.picCross:hover ~ div {
+  transform: scale(1.1);
+}
+
+.picCross:hover ~ .overlay {
+  opacity: 0.5;
+}
+
+.overlay {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.overlay:hover {
+  opacity: 0.5;
+}
+
+.picCross {
+  position: absolute;
+  top: 35%;
+  left: calc(50% - 23px);
+  opacity: 0;
+  transition: all ease-in-out 0.4s;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.picCross > svg path {
+  fill: white;
+}
+
+.picHolder:hover > span {
+  transform: rotate(90deg);
+  top: 50%;
+  opacity: 1;
+}
+
+.activeImageHolder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.imgDiv > img {
+  z-index: 11;
+  cursor: pointer;
+  width: 90%;
+}
+
+.activeClose {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 12;
+  cursor: pointer;
+  transition: opacity ease-in-out 0.2s;
+}
+
+.activeClose:hover {
+  opacity: 0.8;
+}
+
+.activeClose > svg {
+  transform: rotate(45deg);
+  height: 30px;
+}
+
+.activeClose > svg path {
+  fill: white;
+}
+
+.modalBcg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10,10,10,.86)
+}
+
+.imgDiv {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+  max-width: 900px;
+}
+
+.arrows {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity ease-in-out 0.2s;
+  height: 100%;
+  width: 5%;
+}
+
+.arrows:hover {
+  opacity: 0.8;
+}
+
+.arrows > svg path {
+  fill: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .galleryHolder {
+    padding: 65px 0 0;
+  }
+  .galleryLeft {
+    margin-top: 0;
+  }
+  .firstPicHolder {
+    height: 600px;
+  }
+  .secondPicHolder {
+    width: 100%;
+  }
+  .thirdPicHolder {
+    width: 100%;
+  }
+  .fourthPicHolder {
+    height: 600px;
+  }
+  .galleryLeft {
+    padding: 15px 15px 0;
+  }
+  
+  .galleryRight {
+    padding: 15px 15px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .galleryHolder {
+    display: block;
+  }
+  .firstPicHolder, .secondPicHolder, .thirdPicHolder, .fourthPicHolder {
+    height: 500px;
+  }
+  .galleryLeft, .galleryRight {
+    width: 100%;
+  }
+}

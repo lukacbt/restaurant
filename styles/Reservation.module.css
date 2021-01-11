@@ -1,0 +1,148 @@
+.reservationHolder {
+  display: flex;
+  padding-top: 90px;
+  margin-bottom: -240px;
+}
+
+.reservationLeftHolder {
+  width: 57%;
+  padding: 0 15px;
+}
+
+.reservationLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 120px 50px 240px;
+  background-color: #faf5f0;
+}
+
+.reservationRight {
+  width: 43%;
+  margin-top: -120px;
+  padding: 0 15px 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+}
+
+.input {
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 38px;
+  border-radius: 0;
+  background-color: #ffffff;
+  border: 0;
+  color: #777777;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.textarea {
+  min-height: 150px;
+}
+
+.option {
+  padding: 0;
+}
+
+.date, .time {
+  cursor: pointer;
+}
+
+.reservationButton {
+  background: #000000;
+  cursor: pointer;
+  width: 190px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  line-height: 48px;
+  font-size: 15px;
+  padding: 0 30px;
+  border-radius: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.reservationButton:hover {
+  background: transparent;
+  border: 1px solid #ad9966;
+  color: #ad9966;
+}
+.reservationButton.disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+.reservationButton.disabled:hover {
+  background: #000000;
+  cursor: default;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.bottomFormHolder {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+.succ {
+  color: #06553f;
+  font-size: 12px;
+  font-weight: bold;
+  width: calc(100% - 190px);
+  padding-left: 12px;
+}
+.error {
+  display: block;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  margin: -15px 0 18px;
+  width: 100%;
+  padding-left: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .reservationHolder {
+    padding-top: 65px;
+    margin-bottom: 0;
+  }
+  .reservationLeft {
+    padding: 30px 20px;
+    background-color: #faf5f0;
+  }
+  .reservationRight {
+    margin-top: -120px;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reservationHolder {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 80px;
+  }
+  .reservationLeftHolder, .reservationRight {
+    width: 100%;
+  }
+  .resTitle {
+    margin-top: 0;
+  }
+  .reservationLeftHolder {
+    padding-top: 60px;
+  }
+  .reservationRight {
+    margin-top: 0;
+    padding: 0 15px;
+  }
+}
